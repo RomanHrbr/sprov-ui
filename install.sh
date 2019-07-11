@@ -203,7 +203,7 @@ install_sprov-ui() {
     fi
     last_version=$(curl --silent "https://api.github.com/repos/Mydong/sprov-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
     echo -e "Detectó la ltima versión：${last_version}，comienza a descargar los archivos principales"
-    wget -N --no-check-certificate -O /usr/local/sprov-ui/sprov-ui.jar https://github.com/RomanHrbr/sprov-ui/blob/master/sprov-ui-3.1.0.jar
+    wget -N --no-check-certificate -O /usr/local/sprov-ui/sprov-ui.jar https://github.com/RomanHrbr/sprov-ui/raw/master/sprov-ui-3.1.0.jar
     if [[ $? -ne 0 ]]; then
         echo -e "${red}Error al descargar el archivo del núcleo. Asegurese de que su servidor pueda descargar archivos. Si la instalacion falla varias veces, consulte el tutorial de instalacion manual${plain}"
         exit 1
