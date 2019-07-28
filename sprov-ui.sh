@@ -110,7 +110,7 @@ install_soft() {
 
 install() {
     install_base
-    bash <(curl -L -s https://github.com/Mydong/sprov-ui/raw/master/install.sh)
+    bash <(curl -L -s https://raw.githubusercontent.com/RomanHrbr/sprov-ui/master/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -130,7 +130,7 @@ update() {
         return 0
     fi
     install_base
-    bash <(curl -L -s https://github.com/Mydong/sprov-ui/raw/master/install.sh)
+    bash <(curl -L -s https://raw.githubusercontent.com/RomanHrbr/sprov-ui/master/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             restart
