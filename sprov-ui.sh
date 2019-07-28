@@ -417,7 +417,7 @@ show_usage() {
 
 show_menu() {
     echo -e "
-  ${green}sprov-ui 面板管理脚本${plain} ${red}${version}${plain}
+  ${green}sprov-ui Guión de gestión de panel${plain} ${red}${version}${plain}
 
 --- https://blog.sprov.xyz/sprov-ui ---
 
